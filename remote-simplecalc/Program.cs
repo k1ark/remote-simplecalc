@@ -44,9 +44,6 @@ class SimpleCalculator
                     break;
             }
         }
-        else
-        {
-            Console.WriteLine("Некорректный выбор");
-        }
+       
     }
 }
