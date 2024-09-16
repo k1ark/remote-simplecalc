@@ -20,5 +20,30 @@ class SimpleCalculator
 
             Console.Write("Введите второе число: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
+
+            switch (choice)
+            {
+                case "1":
+                    Console.WriteLine($"Результат: {num1 + num2}");
+                    break;
+                case "2":
+                    Console.WriteLine($"Результат: {num1 - num2}");
+                    break;
+                case "3":
+                    Console.WriteLine($"Результат: {num1 * num2}");
+                    break;
+                case "4":
+                    if (num2 != 0)
+                    {
+                        Console.WriteLine($"Результат: {num1 / num2}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ошибка: деление на ноль!");
+                    }
+                    break;
+            }
         }
+       
     }
+}
