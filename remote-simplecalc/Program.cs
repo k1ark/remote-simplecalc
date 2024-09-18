@@ -48,5 +48,7 @@ class SimpleCalculator
         {
             Console.WriteLine("Некорректный выбор");
         }
+        Console.WriteLine("\nНажмите любую клавишу, чтобы выйти...");
+        Console.ReadKey();
     }
 }
